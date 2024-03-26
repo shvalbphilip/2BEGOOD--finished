@@ -1,0 +1,116 @@
+body{
+    display: flex;
+    background-color: rgb(148, 142, 103);
+    font-family: "Bebas Neue";
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    height:100%;
+    width: 100%;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+h2{
+    color: white;
+}
+.inside-container p{
+    color: white;
+    font-size:24px ;
+}
+.small-cart{
+    height: 30px;
+    width:30px ;
+}
+.button{
+    display: flex;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 20px;
+}
+.shirt-container{
+    display: flex;
+    height: 375px;
+    width: 800px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    box-shadow: 0px 0 5px 0px;
+}
+.Description{
+    display: flex;
+    flex-direction: column;
+    height: 375px;
+    width: 400px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.inside-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    height: 375px;
+    width: 400px;
+    background-color: hsla(52, 17.9%, 49.2%,0.8);
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+.footer-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+    position: relative;
+    top: 300px;
+    background-color: rgb(225, 225, 225);
+    padding-left: 100px;
+    padding-right: 100px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    width: 100%;
+}
+.sizes{
+    display: flex;
+    flex-direction: row;
+}
+
+.size-f{
+    display: inline-block;
+    padding-left: 5px;
+    text-decoration: line-through;
+}
+@media only screen and (max-width: 375px) {
+        .shirt-container{
+        max-width: 375px;
+        flex-wrap: wrap;
+        }
+        .Description{
+            background-color: #fff;
+            border-radius: 50px;
+        }
+    }

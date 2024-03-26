@@ -1,0 +1,350 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: "Bebas Neue";
+  font-weight: 300;
+  font-style: normal;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    width:500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+
+}
+.logo{
+    display: flex;
+}
+.fixed-bar {
+    display: flex;
+    z-index: 50;
+    border-radius: 15px;
+    width: 100%;
+    height:50px;
+    position: fixed;
+    background-color: #fff;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    box-sizing: border-box;
+}
+
+.primary-header_IN {
+    display: flex;
+}
+@keyframes color-change {
+    0% { color: rgb(0, 0, 0); }
+    50% { color: rgb(171, 171, 139); }
+    100% { color: rgb(49, 104, 22); }
+  }
+@-webkit-keyframes image_blur{
+    0% { -webkit-filter: blur(0px);}
+    50% { -webkit-filter: blur(5px);}
+    100% { -webkit-filter: blur(0px);}
+}
+@keyframes slideInLeft{
+    from{
+transform:translateY(-50px)
+    }
+
+    to{
+        transform: translateY(0);
+    }
+}
+.LCP{
+    display: flex;
+}
+.LCP ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    padding-right:50px;
+}
+.LCP a{
+    display: flex;
+    align-items: center;
+    color:rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+}
+.footer-page a:hover{
+    -webkit-animation: image_blur 2s; 
+}
+.space{
+    padding-right: 10px;
+}
+.nav-cat{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    width: 650px;
+    padding-left: 50px;
+    margin: 0;
+}
+.nav-cat a:hover{
+    background-color: #dadada;
+}
+ .nav-cat li{
+    display: flex;
+    height:50px;
+    background-color: #fff;
+    width: 150px;
+} 
+.nav-cat li a{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    z-index: 51;
+    text-decoration: none;
+    color:black;
+    align-items: center;
+    font-size: 20px;
+}
+a.nav-cat:hover{
+    background-color: rgb(215, 215, 215);
+    
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu{
+    display: none;
+}
+
+.vid-text{
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    height:500px;
+    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+}
+.video-bg {
+position: absolute;
+z-index: -1;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+min-width:100%;
+min-height: 100%;
+}
+.vid-text h1{
+    display: flex;
+    position: relative;
+    height: 600px;
+    top: 0;
+    right: 0;
+}
+h2{
+    display: block;
+    text-align: center;
+    font-size: 45px;
+    animation: color-change 1s infinite;
+}
+.products{
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    height:500px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 50px;
+    
+}
+
+.products>div{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 15px;
+    height: 320px;
+    width: 180px;
+    max-width: 300px;
+    background-color: rgb(177, 172, 130);
+    overflow: hidden;
+}
+
+.products>div>h1{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.products>div>h1:hover{
+    animation-name: slideInLeft ;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+}
+
+.products>div>a{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    height:200px;
+    overflow: hidden;
+}
+
+.products>div>p{
+    display: flex;
+    justify-content: center;
+}
+a{
+    cursor: pointer;
+}
+
+.footer-page{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+    background-color: rgb(225, 225, 225);
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+@media only screen and (max-width: 375px) {
+    html{
+        display: flex;
+        height:1000px;
+        width:375px;
+    }
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+        height:100%
+    }
+    .LCP ul{
+        padding-right: 0;
+    }
+    h2{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height:60px;
+    }
+    .products{
+        display: flex;
+        flex-wrap: wrap;
+        height:1100px;
+        width: 400px;
+        justify-content: center;
+    }
+    .products>div{
+        display: flex;
+        flex-direction: column;
+        height:330px;
+        width: 150px;
+        padding:0;
+    }
+    .fixed-bar{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 375px;
+        height: 200px;
+        align-items: center;
+        z-index: 2;
+    }
+    .nav-cat{
+       padding-left: 0;
+       justify-content: center;
+    }
+
+    ul.nav-cat{
+        height:50px;
+        width:375px;
+    }
+    .nav-cat ul a{ 
+        width:50px;
+        height: 10px;
+    }
+
+    .video-bg{
+width:375px;
+height:200px;
+min-width: 0;
+min-height: 0;
+}
+
+    .vid-text{
+            display: flex;
+            top:0px;
+            width:375px;
+            height:125px;
+            min-height: 100vh;
+            margin: 0;
+            margin-bottom: 0px;
+        }
+        .vid-text h1{
+            margin:0;
+            height:200px;
+        }
+        .vid-tr{
+        display: flex;
+        width:350px;
+        height: 180px;
+        z-index: 1;
+        padding: 0;
+       justify-content: flex-end;
+        }
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    width:375px;
+    height:50px;
+   align-items: center;
+}
+.LCP a{
+    justify-content: center;
+}
+    nav{
+        display: flex;
+        flex-direction: column;
+        width:375px;
+        height:50px;
+        padding-left: 0;
+    }
+    .footer-page{
+        display: flex;
+        justify-content: space-between;
+        height:30px;
+        width:375px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        height:70px;
+    }
+  }
